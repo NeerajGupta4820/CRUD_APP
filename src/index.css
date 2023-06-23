@@ -1,13 +1,83 @@
-body {
+.app{
+    padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+    --yellow: linear-gradient(180deg, #F8D49A -146.42%, #FAD79D -46.42%);
+--orange: #fca61f;
+--black: #242d49;
+--gray: #788097;
+--purple: linear-gradient(180deg, #BB67FF 0%, #C484F3 100%);
+--pink: #FF919D;
+--glass: rgba(255, 255, 255, 0.54);
+--boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
+--smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+--activeItem: #f799a354;
+ color: var(--black);
+ /* height: 96vh; */
+ background: linear-gradient(
+   106.37deg,
+   #ffe1bc 29.63%,
+   #ffcfd1 51.55%,
+   #f3c6f1 90.85%
+ );
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 100vh;
 }
+.heading{
+    margin-top: 0px;
+    padding-top: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    /* margin: auto; */
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    height: 85vh;
+    width: 87vw;
+    background: var(--glass);
+    border-radius: 2rem;
+    gap: 16px;
+    /* grid-template-columns: 14rem auto; */
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px  15px;
+}
+.main  form input{
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: 0;
+    height: 22px;
+    width: 15vw;
+}
+.main  form label{
+    font-weight: 600;
+    color: #000;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+}  
+  .main  form button{
+    border: 1px solid rgb(236, 86, 26);
+    border-radius: 4px;
+    background-color: rgb(248, 51, 25);
+    width: 15vw;
+    margin-top: 20px;
+    padding: 5px;
+  }
+.main  form button:hover{
+    border: 1px solid black;
+    background: -webkit-linear-gradient(to right,#434343,#000000);
+    background: linear-gradient(to right,#434343,#000000);
+} 
+#test{
+    width:50vw;
+    height: 310px;
+    margin: 5px 20px ;
+    border: 1px solid #000;
+    overflow: auto;
+  }
